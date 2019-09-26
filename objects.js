@@ -1,5 +1,5 @@
 
-let numbers = Object();
+let numbers = {};
 for(i = 1; i < 16;i++)
 {
     
@@ -8,5 +8,5 @@ for(i = 1; i < 16;i++)
 }
 for (let key in numbers) {
     
-    alert( key +":"+ numbers[key] );
+    console.log('\x1b[32m', key +":"+ numbers[key] );
 } 

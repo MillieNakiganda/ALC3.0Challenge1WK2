@@ -1,15 +1,16 @@
-let year = prompt("What year were you born","1995");
+var readlinesync = require("readline-sync");
+let year = readlinesync.question("\nWhat year were you born?\n","1995");
 var dt = new Date();
 let age = dt.getFullYear() - year;
 
 switch(true){
     case (age<18):
-        alert("minor");
+        console.log("minor");
         break;
     case (age >= 18 && age <= 36):
-        alert("youths");
+        console.log("youths");
         break;
     default:
-        alert("elders");
+        console.log("elders");
         break;
 }
